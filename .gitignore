@@ -16,4 +16,5 @@ __pycache__/
 
 # Model weights, too large for git
 mlx_model 
+CodeLlama-7b
 
