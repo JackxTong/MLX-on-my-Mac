@@ -12,6 +12,8 @@ node_modules/
 llama_venv
 
 __pycache__/
+.DS_Store
 
 # Model weights, too large for git
 mlx_model 
+
