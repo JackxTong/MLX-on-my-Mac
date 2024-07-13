@@ -6,28 +6,26 @@ python3 mlx-examples/llms/llama/llama.py --prompt "hello"
 ```
 
 ## Options:
-
-  -h, --help            show this help message and exit
   
-  --model-path MODEL_PATH
+  --model-path
                         Path to the model weights and tokenizer
   
-  --prompt PROMPT       
+  --prompt      
                         The message to be processed by the model. Ignored when --few-shot is provided.
   
-  --few-shot FEW_SHOT   
+  --few-shot   
                         Read a few shot prompt from a file (as in `sample_prompt.txt`).
   
-  --max-tokens MAX_TOKENS, -m MAX_TOKENS
+  --max-tokens
                         How many tokens to generate
   
-  --write-every WRITE_EVERY
+  --write-every
                         After how many tokens to detokenize
   
-  --temp TEMP           
+  --temp          
                         The sampling temperature
   
-  --seed SEED           
+  --seed         
                         The PRNG seed
 
 
