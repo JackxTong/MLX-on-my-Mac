@@ -14,9 +14,9 @@ I used weights `CodeLlama-7b` (13.49GB on disk)
 
 Running 
 ```bash
-python3 mlx-examples/llms/llama/convert.py --torch-path codellama/CodeLlama-7b -q
+python3 mlx-examples/llms/llama/convert.py --torch-path CodeLlama-7b -q
 ```
-will create a new folder called `mlx_model` which stores the model weights (for 7b model weights is 3.8GB on disk)
+will create a new folder called `mlx_model` which stores the model weights (for 7b model weights is 3.8GB on disk, for 13b weights is 25GB)
 
 
 

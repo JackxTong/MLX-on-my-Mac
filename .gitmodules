@@ -1,3 +1,6 @@
 [submodule "codellama"]
 	path = codellama
 	url = https://github.com/meta-llama/codellama.git
+[submodule "llama3"]
+	path = llama3
+	url = https://github.com/meta-llama/llama3.git
