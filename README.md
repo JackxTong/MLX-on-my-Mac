@@ -1,5 +1,26 @@
 # A toy repo to play with Llama based on [MLX](https://github.com/ml-explore), Apple's own ML framework
 
+## To start
+When cloning this repo, also clone the submodule codellama by running
+```bash
+git submodule update --init --recursive
+```
+
+Request access to [Llama's weights](https://llama.meta.com/llama-downloads/). 
+
+Then run `bash codellama/download.sh` to download weights.
+
+I used weights `CodeLlama-7b` (13.49GB on disk)
+
+Running 
+```bash
+python3 mlx-examples/llms/llama/convert.py --torch-path codellama/CodeLlama-7b -q
+```
+will create a new folder called `mlx_model` which stores the model weights (for 7b model weights is 3.8GB on disk)
+
+
+
+
 ## To run prmopt:
 ```bash
 python3 mlx-examples/llms/llama/llama.py --prompt "hello"
@@ -27,15 +48,3 @@ The sampling temperature
 The PRNG seed
 
 
-## Weights
-Request access to [Llama's weights](https://llama.meta.com/llama-downloads/). 
-
-Then run `bash codellama/download.sh` to download weights.
-
-I used weights `CodeLlama-7b` (13.49GB on disk)
-
-Running 
-```bash
-python3 mlx-examples/llms/llama/convert.py --torch-path codellama/CodeLlama-7b -q
-```
-will create a new folder called `mlx_model` which stores the model weights (for 7b model weights is 3.8GB on disk)
